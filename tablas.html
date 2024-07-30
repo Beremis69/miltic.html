@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tablas de Multiplicar</title>
+</head>
+<body>
+<h1>Instrucciones:</h1>
+<label for="numero">Ingrese el numero que desea multiplicar:</label>
+<input type="number" id="numero" name="numero">
+	<button type="button" onclick="multiC()">Calcular</button>
+	<button type= "button"onclick= "sr()">Regresar al menu principal</button>
+	<h1>Resultados</h1>
+<p><span id="T1"></span></p>
+<p><span id="T2"></span></p>
+<p><span id="T3"></span></p>
+<p><span id="T4"></span></p>
+<p><span id="T5"></span></p>
+<p><span id="T6"></span></p>
+<p><span id="T7"></span></p>
+<p><span id="T8"></span></p>
+<p><span id="T9"></span></p>
+<p><span id="T10"></span></p>
+
+<script>
+	function multiC(){
+		const N1= parseFloat(document.getElementById('numero').value);
+
+		const A1 = N1 * 1;
+		const A2 = N1 * 2;
+		const A3 = N1 * 3;
+		const A4 = N1 * 4;
+		const A5 = N1 * 5;
+		const A6 = N1 * 6;
+		const A7 = N1 * 7;
+		const A8 = N1 * 8;
+		const A9 = N1 * 9;
+		const A10 = N1 * 10;
+
+		document.getElementById("T1").textContent ="1x" + N1 + "=" + A1.toFixed(2);
+		document.getElementById("T2").textContent ="2x" + N1 + "=" + A2.toFixed(2);
+		document.getElementById("T3").textContent ="3x" + N1 + "=" + A3.toFixed(2);
+		document.getElementById("T4").textContent ="4x" + N1 + "=" + A4.toFixed(2);
+		document.getElementById("T5").textContent ="5x" + N1 + "=" + A5.toFixed(2);
+		document.getElementById("T6").textContent ="6x" + N1 + "=" + A6.toFixed(2);
+		document.getElementById("T7").textContent ="7x" + N1 + "=" + A7.toFixed(2);
+		document.getElementById("T8").textContent ="8x" + N1 + "=" + A8.toFixed(2);
+		document.getElementById("T9").textContent ="9x" + N1 + "=" + A9.toFixed(2);
+		document.getElementById("T10").textContent ="10x" + N1 + "=" + A10.toFixed(2);
+	}
+	function sr() {
+    	window.open("file:///C:/Users/Cristobal/Desktop/HTML/Menu.html");
+    	window.close("file:///C:/Users/Cristobal/Desktop/HTML/Multiplicaciones.html");
+    }
+
+</script>
+</body>
+</html>
